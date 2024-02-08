@@ -1,0 +1,59 @@
+{
+  "folders": {
+    "items": {
+      "apps": {},
+      "gateways": {},
+      "services": {}
+    }
+  },
+  "modules": {
+    "STS.LocPoC": {
+      "path": "STS.LocPoC.abpmdl"
+    },
+    "STS.LocPoC.AuthServer": {
+      "path": "apps/auth-server/STS.LocPoC.AuthServer.abpmdl",
+      "folder": "apps"
+    },
+    "STS.LocPoC.Blazor": {
+      "path": "apps/blazor/STS.LocPoC.Blazor.abpmdl",
+      "folder": "apps"
+    },
+    "STS.LocPoC.PublicWeb": {
+      "path": "apps/public-web/STS.LocPoC.PublicWeb.abpmdl",
+      "folder": "apps"
+    },
+    "STS.LocPoC.Web": {
+      "path": "apps/web/STS.LocPoC.Web.abpmdl",
+      "folder": "apps"
+    },
+    "STS.LocPoC.WebGateway": {
+      "path": "gateways/web/STS.LocPoC.WebGateway.abpmdl",
+      "folder": "gateways"
+    },
+    "STS.LocPoC.PublicWebGateway": {
+      "path": "gateways/web-public/STS.LocPoC.PublicWebGateway.abpmdl",
+      "folder": "gateways"
+    },
+    "STS.LocPoC.AdministrationService": {
+      "path": "services/administration/STS.LocPoC.AdministrationService.abpmdl",
+      "folder": "services"
+    },
+    "STS.LocPoC.IdentityService": {
+      "path": "services/identity/STS.LocPoC.IdentityService.abpmdl",
+      "folder": "services"
+    },
+    "STS.LocPoC.ProductService": {
+      "path": "services/product/STS.LocPoC.ProductService.abpmdl",
+      "folder": "services"
+    },
+    "STS.LocPoC.SaasService": {
+      "path": "services/saas/STS.LocPoC.SaasService.abpmdl",
+      "folder": "services"
+    }
+  },
+  "runProfiles": {
+    "Default": {
+      "path": "etc/run-profiles/Default.abprun.json"
+    }
+  }
+}

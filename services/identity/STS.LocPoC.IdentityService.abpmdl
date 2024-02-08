@@ -1,0 +1,58 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "STS.LocPoC.IdentityService.HttpApi": {
+      "path": "src/STS.LocPoC.IdentityService.HttpApi/STS.LocPoC.IdentityService.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.IdentityService.Application": {
+      "path": "src/STS.LocPoC.IdentityService.Application/STS.LocPoC.IdentityService.Application.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.IdentityService.Domain": {
+      "path": "src/STS.LocPoC.IdentityService.Domain/STS.LocPoC.IdentityService.Domain.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.IdentityService.Domain.Shared": {
+      "path": "src/STS.LocPoC.IdentityService.Domain.Shared/STS.LocPoC.IdentityService.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.IdentityService.EntityFrameworkCore": {
+      "path": "src/STS.LocPoC.IdentityService.EntityFrameworkCore/STS.LocPoC.IdentityService.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.IdentityService.HttpApi.Client": {
+      "path": "src/STS.LocPoC.IdentityService.HttpApi.Client/STS.LocPoC.IdentityService.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.IdentityService.Application.Contracts": {
+      "path": "src/STS.LocPoC.IdentityService.Application.Contracts/STS.LocPoC.IdentityService.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.IdentityService.HttpApi.Host": {
+      "path": "src/STS.LocPoC.IdentityService.HttpApi.Host/STS.LocPoC.IdentityService.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.IdentityService.TestBase": {
+      "path": "test/STS.LocPoC.IdentityService.TestBase/STS.LocPoC.IdentityService.TestBase.abppkg",
+      "folder": "test"
+    },
+    "STS.LocPoC.IdentityService.Domain.Tests": {
+      "path": "test/STS.LocPoC.IdentityService.Domain.Tests/STS.LocPoC.IdentityService.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "STS.LocPoC.IdentityService.EntityFrameworkCore.Tests": {
+      "path": "test/STS.LocPoC.IdentityService.EntityFrameworkCore.Tests/STS.LocPoC.IdentityService.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "STS.LocPoC.IdentityService.Application.Tests": {
+      "path": "test/STS.LocPoC.IdentityService.Application.Tests/STS.LocPoC.IdentityService.Application.Tests.abppkg",
+      "folder": "test"
+    }
+  }
+}

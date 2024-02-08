@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>STS.LocPoC.LocationService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="8.0.1" />
+    <ProjectReference Include="..\STS.LocPoC.LocationService.Application.Contracts\STS.LocPoC.LocationService.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

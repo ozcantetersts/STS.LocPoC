@@ -1,0 +1,13 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "STS.LocPoC.AuthServer": {
+      "path": "src/STS.LocPoC.AuthServer/STS.LocPoC.AuthServer.abppkg",
+      "folder": "src"
+    }
+  }
+}

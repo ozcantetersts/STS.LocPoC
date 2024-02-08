@@ -1,0 +1,131 @@
+{
+  "folders": {
+    "items": {
+      "services": {
+        "items": {
+          "administration": {
+            "items": {
+              "src": {}
+            }
+          },
+          "identity": {
+            "items": {
+              "src": {}
+            }
+          },
+          "product": {
+            "items": {
+              "src": {}
+            }
+          },
+          "saas": {
+            "items": {
+              "src": {}
+            }
+          }
+        }
+      },
+      "gateways": {
+        "items": {
+          "web": {
+            "items": {
+              "src": {}
+            }
+          },
+          "web-public": {
+            "items": {
+              "src": {}
+            }
+          }
+        }
+      },
+      "apps": {
+        "items": {
+          "auth-server": {
+            "items": {
+              "src": {}
+            }
+          },
+          "blazor": {
+            "items": {
+              "src": {}
+            }
+          },
+          "public-web": {
+            "items": {
+              "src": {}
+            }
+          },
+          "web": {
+            "items": {
+              "src": {}
+            }
+          }
+        }
+      },
+      "shared": {}
+    }
+  },
+  "packages": {
+    "STS.LocPoC.AdministrationService.HttpApi.Host": {
+      "path": "services/administration/src/STS.LocPoC.AdministrationService.HttpApi.Host/STS.LocPoC.AdministrationService.HttpApi.Host.abppkg",
+      "folder": "services/administration/src"
+    },
+    "STS.LocPoC.IdentityService.HttpApi.Host": {
+      "path": "services/identity/src/STS.LocPoC.IdentityService.HttpApi.Host/STS.LocPoC.IdentityService.HttpApi.Host.abppkg",
+      "folder": "services/identity/src"
+    },
+    "STS.LocPoC.ProductService.HttpApi.Host": {
+      "path": "services/product/src/STS.LocPoC.ProductService.HttpApi.Host/STS.LocPoC.ProductService.HttpApi.Host.abppkg",
+      "folder": "services/product/src"
+    },
+    "STS.LocPoC.SaasService.HttpApi.Host": {
+      "path": "services/saas/src/STS.LocPoC.SaasService.HttpApi.Host/STS.LocPoC.SaasService.HttpApi.Host.abppkg",
+      "folder": "services/saas/src"
+    },
+    "STS.LocPoC.WebGateway": {
+      "path": "gateways/web/src/STS.LocPoC.WebGateway/STS.LocPoC.WebGateway.abppkg",
+      "folder": "gateways/web/src"
+    },
+    "STS.LocPoC.PublicWebGateway": {
+      "path": "gateways/web-public/src/STS.LocPoC.PublicWebGateway/STS.LocPoC.PublicWebGateway.abppkg",
+      "folder": "gateways/web-public/src"
+    },
+    "STS.LocPoC.AuthServer": {
+      "path": "apps/auth-server/src/STS.LocPoC.AuthServer/STS.LocPoC.AuthServer.abppkg",
+      "folder": "apps/auth-server/src"
+    },
+    "STS.LocPoC.PublicWeb": {
+      "path": "apps/public-web/src/STS.LocPoC.PublicWeb/STS.LocPoC.PublicWeb.abppkg",
+      "folder": "apps/public-web/src"
+    },
+    "STS.LocPoC.Web": {
+      "path": "apps/web/src/STS.LocPoC.Web/STS.LocPoC.Web.abppkg",
+      "folder": "apps/web/src"
+    },
+    "STS.LocPoC.DbMigrator": {
+      "path": "shared/STS.LocPoC.DbMigrator/STS.LocPoC.DbMigrator.abppkg",
+      "folder": "shared"
+    },
+    "STS.LocPoC.Shared.Hosting.AspNetCore": {
+      "path": "shared/STS.LocPoC.Shared.Hosting.AspNetCore/STS.LocPoC.Shared.Hosting.AspNetCore.abppkg",
+      "folder": "shared"
+    },
+    "STS.LocPoC.Shared.Hosting.Microservices": {
+      "path": "shared/STS.LocPoC.Shared.Hosting.Microservices/STS.LocPoC.Shared.Hosting.Microservices.abppkg",
+      "folder": "shared"
+    },
+    "STS.LocPoC.Shared.Localization": {
+      "path": "shared/STS.LocPoC.Shared.Localization/STS.LocPoC.Shared.Localization.abppkg",
+      "folder": "shared"
+    },
+    "STS.LocPoC.Shared.Hosting.Gateways": {
+      "path": "shared/STS.LocPoC.Shared.Hosting.Gateways/STS.LocPoC.Shared.Hosting.Gateways.abppkg",
+      "folder": "shared"
+    },
+    "STS.LocPoC.Shared.Hosting": {
+      "path": "shared/STS.LocPoC.Shared.Hosting/STS.LocPoC.Shared.Hosting.abppkg",
+      "folder": "shared"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+config:
+  selfUrl: # https://blazor-server.locpoc.dev
+  gatewayUrl: # http://locpoc-st-gateway-web
+  authServer:
+    authority: # http://locpoc-st-authserver
+    requireHttpsMetadata: # "false"
+    isOnK8s: # "true"
+    metaAddress: # http://locpoc-st-authserver
+  dotnetEnv: # 
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  stringEncryptionDefaultPassPhrase: gsKnGZ041HLL4IM8
+  AbpLicenseCode: #
+
+ingress:
+  host: # blazor-server.locpoc.dev
+  tlsSecret: locpoc-tls
+
+image:
+  repository: sts/locpoc-app-blazor-server
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}   

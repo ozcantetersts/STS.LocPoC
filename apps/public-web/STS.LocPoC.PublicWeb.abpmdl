@@ -1,0 +1,13 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "STS.LocPoC.PublicWeb": {
+      "path": "src/STS.LocPoC.PublicWeb/STS.LocPoC.PublicWeb.abppkg",
+      "folder": "src"
+    }
+  }
+}

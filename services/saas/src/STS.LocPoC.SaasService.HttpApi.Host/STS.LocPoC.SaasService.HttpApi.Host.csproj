@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <Import Project="..\..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <RootNamespace>STS.LocPoC.SaasService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\..\shared\STS.LocPoC.Shared.Hosting.Microservices\STS.LocPoC.Shared.Hosting.Microservices.csproj" />
+        <ProjectReference Include="..\STS.LocPoC.SaasService.Application\STS.LocPoC.SaasService.Application.csproj" />
+        <ProjectReference Include="..\STS.LocPoC.SaasService.EntityFrameworkCore\STS.LocPoC.SaasService.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="..\STS.LocPoC.SaasService.HttpApi\STS.LocPoC.SaasService.HttpApi.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="Logs\**" />
+        <Content Remove="Logs\**" />
+        <EmbeddedResource Remove="Logs\**" />
+        <None Remove="Logs\**" />
+    </ItemGroup>
+
+</Project>

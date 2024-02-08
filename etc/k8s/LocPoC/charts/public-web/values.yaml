@@ -1,0 +1,25 @@
+config:
+  selfUrl: # 
+  gatewayUrl: # 
+  authServer:
+    authority: # http://locpoc-st-authserver
+    requireHttpsMetadata: # "false"
+    isOnK8s: # "true"
+    metaAddress: # http://locpoc-st-authserver
+  dotnetEnv: # 
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  stringEncryptionDefaultPassPhrase: gsKnGZ041HLL4IM8
+  AbpLicenseCode: #
+
+ingress:
+  host: # locpoc-st-public-web
+  tlsSecret: locpoc-tls
+
+image:
+  repository: sts/locpoc-app-public-web
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}

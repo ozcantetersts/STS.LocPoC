@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "name": "LocPoCWeb",
+  "private": true,
+  "dependencies": {
+    "@volo/abp.aspnetcore.mvc.ui.theme.leptonx": "~3.0.0",
+    "@volo/identity": "~8.0.1",
+    "@abp/chart.js": "~8.0.1",
+    "@volo/language-management": "~8.0.1"
+  }
+}

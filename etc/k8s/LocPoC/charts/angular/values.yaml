@@ -1,0 +1,21 @@
+config:
+  selfUrl: # https://angular.locpoc.dev
+  gatewayUrl: # https://gateway-web.locpoc.dev
+  authServer:
+      authority: # https://authserver.locpoc.dev
+      requireHttpsMetadata: # false
+      responseType: "code"
+      strictDiscoveryDocumentValidation: false
+      skipIssuerCheck: true
+  AbpLicenseCode: #
+
+ingress:
+  host: # angular.locpoc.dev
+  tlsSecret: locpoc-tls
+
+image:
+  repository: sts/locpoc-app-angular
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}

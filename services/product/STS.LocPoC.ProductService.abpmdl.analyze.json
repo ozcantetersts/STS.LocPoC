@@ -1,0 +1,169 @@
+{
+  "folders": {
+    "src": {},
+    "test": {}
+  },
+  "packages": {
+    "STS.LocPoC.ProductService.Domain.Shared": {
+      "type": "dotnet-project",
+      "path": "src/STS.LocPoC.ProductService.Domain.Shared/STS.LocPoC.ProductService.Domain.Shared.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.domain.shared": {}
+      }      
+    },
+    "STS.LocPoC.ProductService.Domain": {
+      "type": "dotnet-project",
+      "path": "src/STS.LocPoC.ProductService.Domain/STS.LocPoC.ProductService.Domain.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.domain": {}
+      },
+      "contents": {
+        "aggregates": {
+          "STS.LocPoC.ProductService.Products.Product": {
+            "keyType": "Guid",
+            "summary": "Represents a product.",
+            "collectionProperties": {},
+            "navigationProperties": {}
+          } 
+        },
+        "repositoryInterfaces": {
+          "STS.LocPoC.ProductService.Products.IProductRepository": {
+            "entity": {
+              "type": "STS.LocPoC.ProductService.Products.Product",
+              "package": "STS.LocPoC.ProductService.Domain"
+            }
+          }
+        }
+      }
+    },
+    "STS.LocPoC.ProductService.Application.Contracts": {
+      "type": "dotnet-project",
+      "path": "src/STS.LocPoC.ProductService.Application.Contracts/STS.LocPoC.ProductService.Application.Contracts.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.application.contracts": {}
+      }
+    },
+    "STS.LocPoC.ProductService.Application": {
+      "type": "dotnet-project",
+      "path": "src/STS.LocPoC.ProductService.Application/STS.LocPoC.ProductService.Application.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.application": {}
+      },
+      "contents": {
+        "applicationServices": {
+          "STS.LocPoC.ProductService.ProductAppService": {}
+        }
+      }
+    },
+    "STS.LocPoC.ProductService.EntityFrameworkCore": {
+      "type": "dotnet-project",
+      "path": "src/STS.LocPoC.ProductService.EntityFrameworkCore/STS.LocPoC.ProductService.EntityFrameworkCore.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.ef": {}
+      },
+      "contents": {
+        "efDbContexts": {
+          "STS.LocPoC.ProductService.EntityFrameworkCore.ProductServiceDbContext": {
+            "entities": {
+              "STS.LocPoC.ProductService.Products.Product": {
+                "package": "STS.LocPoC.ProductService.Domain",
+                "dbSetPropertyOnDbContext": "Products",
+                "databaseTable": "Products" 
+              }
+            }
+          }
+        }
+      }
+    },
+    "STS.LocPoC.ProductService.HttpApi": {
+      "type": "dotnet-project",
+      "path": "src/STS.LocPoC.ProductService.HttpApi/STS.LocPoC.ProductService.HttpApi.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.http-api": {}
+      },
+      "contents": {
+        "controllers": {
+          "STS.LocPoC.ProductService.Products.ProductController": {},
+          "STS.LocPoC.ProductService.Products.ProductPublicController": {}
+        }
+      }
+    },
+    "STS.LocPoC.ProductService.HttpApi.Client": {
+      "type": "dotnet-project",
+      "path": "src/STS.LocPoC.ProductService.HttpApi.Client/STS.LocPoC.ProductService.HttpApi.Client.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.http-api-client": {}
+      }
+    },
+    "STS.LocPoC.ProductService.Web": {
+      "type": "dotnet-project",
+      "path": "src/STS.LocPoC.ProductService.Web/STS.LocPoC.ProductService.Web.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.ui.mvc": {}
+      },
+      "contents": {
+        "mvcPages": {
+          "STS.LocPoC.ProductService.Web.Pages.Products.Index.cshtml": {},
+          "STS.LocPoC.ProductService.Web.Pages.Products.CreateModal.cshtml": {},
+          "STS.LocPoC.ProductService.Web.Pages.Products.EditModal.cshtml": {}
+        }
+      }
+    },
+    "STS.LocPoC.ProductService.Blazor": {
+      "type": "dotnet-project",
+      "path": "src/STS.LocPoC.ProductService.Blazor/STS.LocPoC.ProductService.Blazor.csproj",
+      "folder": "src",
+      "includes": {
+        "lib.ui.blazor": {}
+      }
+    },
+    "STS.LocPoC.ProductService.HttpApi.Host": {
+      "type": "dotnet-project",
+      "path": "src/STS.LocPoC.ProductService.HttpApi.Host/STS.LocPoC.ProductService.HttpApi.Host.csproj",
+      "folder": "src",
+      "includes": {
+        "host.http-api": {}
+      }
+    },
+    "STS.LocPoC.ProductService.TestBase": {
+      "type": "dotnet-project",
+      "path": "test/STS.LocPoC.ProductService.TestBase/STS.LocPoC.ProductService.TestBase.csproj",
+      "folder": "test",
+      "includes": {
+        "lib.test": {}
+      }
+    },
+    "STS.LocPoC.ProductService.Domain.Tests": {
+      "type": "dotnet-project",
+      "path": "test/STS.LocPoC.ProductService.Domain.Tests/STS.LocPoC.ProductService.Domain.Tests.csproj",
+      "folder": "test",
+      "includes": {
+        "lib.test": {}
+      }
+    },
+    "STS.LocPoC.ProductService.EntityFrameworkCore.Tests": {
+      "type": "dotnet-project",
+      "path": "test/STS.LocPoC.ProductService.EntityFrameworkCore.Tests/STS.LocPoC.ProductService.EntityFrameworkCore.Tests.csproj",
+      "folder": "test",
+      "includes": {
+        "lib.test": {}
+      }
+    },
+    "STS.LocPoC.ProductService.Application.Tests": {
+      "type": "dotnet-project",
+      "path": "test/STS.LocPoC.ProductService.Application.Tests/STS.LocPoC.ProductService.Application.Tests.csproj",
+      "folder": "test",
+      "includes": {
+        "lib.test": {}
+      }
+    }
+  }
+}

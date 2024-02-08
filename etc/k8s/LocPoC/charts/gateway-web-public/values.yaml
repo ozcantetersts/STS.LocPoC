@@ -1,0 +1,35 @@
+config:
+  selfUrl: # https://gateway-public.locpoc.dev
+  corsOrigins: # https://locpoc-st-gateway-web,https://locpoc-st-gateway-public-web
+  authServer:
+    authority: # http://locpoc-st-authserver
+    requireHttpsMetadata: # "false"
+    metadataAddress: # https://authserver.locpoc.dev/.well-known/openid-configuration
+    swaggerClientId: # WebGateway_Swagger
+  dotnetEnv: Staging 
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  AbpLicenseCode: #
+
+reRoutes:
+  accountService:
+    url: http://locpoc-st-authserver
+  saasService:
+    url: http://saas-st-administration
+  administrationService:
+    url: http://locpoc-st-administration
+  productService:
+    url: http://locpoc-st-product
+
+ingress:
+  host: gateway-public.locpoc.dev
+  tlsSecret: locpoc-tls
+
+image:
+  repository: sts/locpoc-gateway-web-public
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}
+    

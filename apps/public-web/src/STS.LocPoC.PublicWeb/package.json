@@ -1,0 +1,8 @@
+{
+  "version": "0.1.0",
+  "name": "LocPoCPublicWeb",
+  "private": true,
+  "dependencies": {
+    "@volo/abp.aspnetcore.mvc.ui.theme.lepton": "~8.0.1"
+  }
+}

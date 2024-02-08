@@ -1,0 +1,18 @@
+config:
+  selfUrl: # https://blazor.locpoc.dev
+  gatewayUrl: # https://gateway-web.locpoc.dev
+  authServer:
+      authority: # https://locpoc-st-authserver
+      responseType: "code"
+  AbpLicenseCode: #
+
+ingress:
+  host: # blazor.locpoc.dev
+  tlsSecret: locpoc-tls
+
+image:
+  repository: sts/locpoc-app-blazor
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}

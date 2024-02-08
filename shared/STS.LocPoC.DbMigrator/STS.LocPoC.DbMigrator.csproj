@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="8.0.1" />
+        <ProjectReference Include="..\STS.LocPoC.Shared.Hosting\STS.LocPoC.Shared.Hosting.csproj" />
+        <ProjectReference Include="..\..\services\administration\src\STS.LocPoC.AdministrationService.Application.Contracts\STS.LocPoC.AdministrationService.Application.Contracts.csproj" />
+        <ProjectReference Include="..\..\services\administration\src\STS.LocPoC.AdministrationService.EntityFrameworkCore\STS.LocPoC.AdministrationService.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="..\..\services\identity\src\STS.LocPoC.IdentityService.EntityFrameworkCore\STS.LocPoC.IdentityService.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="..\..\services\identity\src\STS.LocPoC.IdentityService.Application.Contracts\STS.LocPoC.IdentityService.Application.Contracts.csproj" />
+        <ProjectReference Include="..\..\services\saas\src\STS.LocPoC.SaasService.EntityFrameworkCore\STS.LocPoC.SaasService.EntityFrameworkCore.csproj" />
+        <ProjectReference Include="..\..\services\saas\src\STS.LocPoC.SaasService.Application.Contracts\STS.LocPoC.SaasService.Application.Contracts.csproj" />
+        <ProjectReference Include="..\..\services\product\src\STS.LocPoC.ProductService.Application.Contracts\STS.LocPoC.ProductService.Application.Contracts.csproj" />
+        <ProjectReference Include="..\..\services\product\src\STS.LocPoC.ProductService.EntityFrameworkCore\STS.LocPoC.ProductService.EntityFrameworkCore.csproj" />
+
+		<ProjectReference Include="..\..\services\location\src\STS.LocPoC.LocationService.Application.Contracts\STS.LocPoC.LocationService.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\services\location\src\STS.LocPoC.LocationService.EntityFrameworkCore\STS.LocPoC.LocationService.EntityFrameworkCore.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="Logs\**" />
+        <Content Remove="Logs\**" />
+        <EmbeddedResource Remove="Logs\**" />
+        <None Remove="Logs\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="appsettings.json" />
+        <Content Include="appsettings.json">
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+        <None Remove="appsettings.secrets.json" />
+    <Content Include="appsettings.secrets.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    </ItemGroup>
+
+</Project>

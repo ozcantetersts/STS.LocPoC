@@ -1,0 +1,58 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "STS.LocPoC.AdministrationService.HttpApi": {
+      "path": "src/STS.LocPoC.AdministrationService.HttpApi/STS.LocPoC.AdministrationService.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.AdministrationService.Application.Contracts": {
+      "path": "src/STS.LocPoC.AdministrationService.Application.Contracts/STS.LocPoC.AdministrationService.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.AdministrationService.Application": {
+      "path": "src/STS.LocPoC.AdministrationService.Application/STS.LocPoC.AdministrationService.Application.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.AdministrationService.Domain.Shared": {
+      "path": "src/STS.LocPoC.AdministrationService.Domain.Shared/STS.LocPoC.AdministrationService.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.AdministrationService.Domain": {
+      "path": "src/STS.LocPoC.AdministrationService.Domain/STS.LocPoC.AdministrationService.Domain.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.AdministrationService.EntityFrameworkCore": {
+      "path": "src/STS.LocPoC.AdministrationService.EntityFrameworkCore/STS.LocPoC.AdministrationService.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.AdministrationService.HttpApi.Client": {
+      "path": "src/STS.LocPoC.AdministrationService.HttpApi.Client/STS.LocPoC.AdministrationService.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.AdministrationService.HttpApi.Host": {
+      "path": "src/STS.LocPoC.AdministrationService.HttpApi.Host/STS.LocPoC.AdministrationService.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.AdministrationService.TestBase": {
+      "path": "test/STS.LocPoC.AdministrationService.TestBase/STS.LocPoC.AdministrationService.TestBase.abppkg",
+      "folder": "test"
+    },
+    "STS.LocPoC.AdministrationService.Domain.Tests": {
+      "path": "test/STS.LocPoC.AdministrationService.Domain.Tests/STS.LocPoC.AdministrationService.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "STS.LocPoC.AdministrationService.EntityFrameworkCore.Tests": {
+      "path": "test/STS.LocPoC.AdministrationService.EntityFrameworkCore.Tests/STS.LocPoC.AdministrationService.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "STS.LocPoC.AdministrationService.Application.Tests": {
+      "path": "test/STS.LocPoC.AdministrationService.Application.Tests/STS.LocPoC.AdministrationService.Application.Tests.abppkg",
+      "folder": "test"
+    }
+  }
+}

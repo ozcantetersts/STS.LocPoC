@@ -1,0 +1,58 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "STS.LocPoC.SaasService.HttpApi": {
+      "path": "src/STS.LocPoC.SaasService.HttpApi/STS.LocPoC.SaasService.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.SaasService.Application.Contracts": {
+      "path": "src/STS.LocPoC.SaasService.Application.Contracts/STS.LocPoC.SaasService.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.SaasService.Application": {
+      "path": "src/STS.LocPoC.SaasService.Application/STS.LocPoC.SaasService.Application.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.SaasService.Domain.Shared": {
+      "path": "src/STS.LocPoC.SaasService.Domain.Shared/STS.LocPoC.SaasService.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.SaasService.Domain": {
+      "path": "src/STS.LocPoC.SaasService.Domain/STS.LocPoC.SaasService.Domain.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.SaasService.EntityFrameworkCore": {
+      "path": "src/STS.LocPoC.SaasService.EntityFrameworkCore/STS.LocPoC.SaasService.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.SaasService.HttpApi.Client": {
+      "path": "src/STS.LocPoC.SaasService.HttpApi.Client/STS.LocPoC.SaasService.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.SaasService.HttpApi.Host": {
+      "path": "src/STS.LocPoC.SaasService.HttpApi.Host/STS.LocPoC.SaasService.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "STS.LocPoC.SaasService.TestBase": {
+      "path": "test/STS.LocPoC.SaasService.TestBase/STS.LocPoC.SaasService.TestBase.abppkg",
+      "folder": "test"
+    },
+    "STS.LocPoC.SaasService.Domain.Tests": {
+      "path": "test/STS.LocPoC.SaasService.Domain.Tests/STS.LocPoC.SaasService.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "STS.LocPoC.SaasService.EntityFrameworkCore.Tests": {
+      "path": "test/STS.LocPoC.SaasService.EntityFrameworkCore.Tests/STS.LocPoC.SaasService.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "STS.LocPoC.MicroserviceName.Application.Tests": {
+      "path": "test/STS.LocPoC.SaasService.Application.Tests/STS.LocPoC.SaasService.Application.Tests.abppkg",
+      "folder": "test"
+    }
+  }
+}

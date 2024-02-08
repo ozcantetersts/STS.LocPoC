@@ -1,0 +1,37 @@
+config:
+  selfUrl: # https://administration.locpoc.dev
+  corsOrigins: #
+  connectionStrings:
+    administrationService: #
+    saasService: #
+  authServer:
+    authority: # http://locpoc-st-authserver
+    requireHttpsMetadata: "false"
+    metadataAddress: # http://admin.locpoc.dev/.well-known/openid-configuration
+    swaggerClientId: WebGateway_Swagger
+  remoteServices:
+    abpIdentityBaseUrl: #
+    useCurrentToken: "false"
+  dotnetEnv: #
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  stringEncryptionDefaultPassPhrase: gsKnGZ041HLL4IM8
+  AbpLicenseCode: #
+
+synchedCommunication:
+  authority: # https://admin.locpoc.dev
+  requireHttps: #
+  validateIssuerName: #
+  validateEndpoints: #
+
+ingress:
+  host: # locpoc-st-administration
+  tlsSecret: locpoc-tls
+
+image:
+  repository: sts/locpoc-service-administration
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}
