@@ -52,7 +52,8 @@ public class LocationServiceWebModule : AbpModule
 
         Configure<RazorPagesOptions>(options =>
         {
-                // options.Conventions.AuthorizePage("/LocationService/Index", LocationServicePermissions.LocationService.Default);
-            });
+            // options.Conventions.AuthorizePage("/LocationService/Index", LocationServicePermissions.LocationService.Default);
+            options.Conventions.AuthorizePage("/UserLocations/Index", LocationServicePermissions.UserLocations.Default);
+        });
     }
 }

@@ -1,3 +1,5 @@
+using Volo.Abp.EntityFrameworkCore.Modeling;
+using STS.LocPoC.LocationService.UserLocations;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
 
@@ -17,5 +19,17 @@ public static class LocationServiceDbContextModelCreatingExtensions
         //    b.ConfigureByConvention(); //auto configure for the base class props
         //    //...
         //});
+        if (builder.IsHostDatabase())
+        {
+            builder.Entity<UserLocation>(b =>
+            {
+                b.ToTable(LocationServiceDbProperties.DbTablePrefix + "UserLocations", LocationServiceDbProperties.DbSchema);
+                b.ConfigureByConvention();
+                b.Property(x => x.UserId).HasColumnName(nameof(UserLocation.UserId));
+                b.Property(x => x.Longitude).HasColumnName(nameof(UserLocation.Longitude)).IsRequired();
+                b.Property(x => x.Latitude).HasColumnName(nameof(UserLocation.Latitude)).IsRequired();
+            });
+
+        }
     }
 }

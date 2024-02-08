@@ -1,3 +1,4 @@
+using STS.LocPoC.LocationService.UserLocations;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.SqlServer;
@@ -21,9 +22,11 @@ public class LocationServiceEntityFrameworkCoreModule : AbpModule
     {
         context.Services.AddAbpDbContext<LocationServiceDbContext>(options =>
         {
-                /* Remove "includeAllEntities: true" to create
-                 * default repositories only for aggregate roots */
+            /* Remove "includeAllEntities: true" to create
+             * default repositories only for aggregate roots */
             options.AddDefaultRepositories(includeAllEntities: true);
+            options.AddRepository<UserLocation, UserLocations.EfCoreUserLocationRepository>();
+
         });
 
         Configure<AbpDbContextOptions>(options =>

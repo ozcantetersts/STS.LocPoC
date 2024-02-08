@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MiniExcel" Version="1.31.2" />
     <PackageReference Include="Volo.Abp.Ddd.Application" Version="8.0.1" />
     <PackageReference Include="Volo.Abp.AutoMapper" Version="8.0.1" />
     <ProjectReference Include="..\STS.LocPoC.LocationService.Application.Contracts\STS.LocPoC.LocationService.Application.Contracts.csproj" />

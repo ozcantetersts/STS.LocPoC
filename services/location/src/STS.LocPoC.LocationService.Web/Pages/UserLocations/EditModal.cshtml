@@ -1,0 +1,43 @@
+@page
+@using Microsoft.AspNetCore.Mvc.Localization
+@using STS.LocPoC.LocationService.Localization
+@using STS.LocPoC.LocationService.Web.Pages.UserLocations
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@using STS.LocPoC.LocationService.UserLocations;
+@using System.Globalization
+@inject IHtmlLocalizer<LocationServiceResource> L
+@model EditModalModel
+@{
+    Layout = null;
+}
+
+<form data-ajaxForm="true" asp-page="/UserLocations/EditModal" autocomplete="off">
+    <abp-modal id="UserLocationEditModal">
+        <abp-modal-header title="@L["Update"].Value"></abp-modal-header>
+
+        <abp-modal-body>
+
+                    <abp-input asp-for="Id" />
+                    
+                    <abp-input asp-for="UserLocation.ConcurrencyStamp" hidden="true" suppress-label="true"/>
+                    
+
+            <abp-input asp-for="UserLocation.UserId"   />
+
+
+            <abp-input asp-for="UserLocation.Longitude"   />
+
+
+            <abp-input asp-for="UserLocation.Latitude"   />
+
+                    
+                
+
+
+        </abp-modal-body>
+
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)">
+
+        </abp-modal-footer>
+    </abp-modal>
+</form>
