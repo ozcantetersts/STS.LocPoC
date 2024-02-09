@@ -10,8 +10,8 @@ using STS.LocPoC.Shared.Hosting;
 using Volo.Abp.Modularity;
 using Volo.Abp.Caching;
 using Volo.Abp.Caching.StackExchangeRedis;
-using STS.LocPoC.LocationService;
-using STS.LocPoC.LocationService.EntityFrameworkCore;
+//using STS.LocPoC.LocationService;
+//using STS.LocPoC.LocationService.EntityFrameworkCore;
 
 namespace STS.LocPoC.DbMigrator;
 
@@ -25,9 +25,9 @@ namespace STS.LocPoC.DbMigrator;
     typeof(AdministrationServiceEntityFrameworkCoreModule),
     typeof(AdministrationServiceApplicationContractsModule),
     typeof(ProductServiceApplicationContractsModule),
-    typeof(ProductServiceEntityFrameworkCoreModule),
-     typeof(LocationServiceApplicationContractsModule),
-    typeof(LocationServiceEntityFrameworkCoreModule)
+    typeof(ProductServiceEntityFrameworkCoreModule)
+    // typeof(LocationServiceApplicationContractsModule),
+   // typeof(LocationServiceEntityFrameworkCoreModule)
 )]
 public class LocPoCDbMigratorModule : AbpModule
 {

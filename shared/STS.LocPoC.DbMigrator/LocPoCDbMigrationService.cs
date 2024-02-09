@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using STS.LocPoC.AdministrationService.EntityFrameworkCore;
 using STS.LocPoC.IdentityService;
 using STS.LocPoC.IdentityService.EntityFrameworkCore;
-using STS.LocPoC.LocationService.EntityFrameworkCore;
+//using STS.LocPoC.LocationService.EntityFrameworkCore;
 using STS.LocPoC.ProductService.EntityFrameworkCore;
 using STS.LocPoC.SaasService.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.EntityFrameworkCore;
@@ -100,7 +100,7 @@ public class LocPoCDbMigrationService : ITransientDependency
             await MigrateDatabaseAsync<AdministrationServiceDbContext>(cancellationToken);
             await MigrateDatabaseAsync<IdentityServiceDbContext>(cancellationToken);
             await MigrateDatabaseAsync<ProductServiceDbContext>(cancellationToken);
-            await MigrateDatabaseAsync<LocationServiceDbContext>(cancellationToken);
+           //await MigrateDatabaseAsync<LocationServiceDbContext>(cancellationToken);
 
             await uow.CompleteAsync(cancellationToken);
         }

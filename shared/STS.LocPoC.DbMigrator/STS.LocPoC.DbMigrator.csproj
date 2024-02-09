@@ -23,8 +23,7 @@
         <ProjectReference Include="..\..\services\product\src\STS.LocPoC.ProductService.Application.Contracts\STS.LocPoC.ProductService.Application.Contracts.csproj" />
         <ProjectReference Include="..\..\services\product\src\STS.LocPoC.ProductService.EntityFrameworkCore\STS.LocPoC.ProductService.EntityFrameworkCore.csproj" />
 
-		<ProjectReference Include="..\..\services\location\src\STS.LocPoC.LocationService.Application.Contracts\STS.LocPoC.LocationService.Application.Contracts.csproj" />
-		<ProjectReference Include="..\..\services\location\src\STS.LocPoC.LocationService.EntityFrameworkCore\STS.LocPoC.LocationService.EntityFrameworkCore.csproj" />
+	
     </ItemGroup>
 
     <ItemGroup>

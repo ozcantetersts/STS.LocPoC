@@ -110,7 +110,7 @@ public class OpenIddictDataSeeder : ITransientDependency
             var administrationServiceRootUrl = _configuration[$"OpenIddict:Resources:AdministrationService:RootUrl"]?.EnsureEndsWith('/');
             var saasServiceRootUrl = _configuration[$"OpenIddict:Resources:SaasService:RootUrl"]?.EnsureEndsWith('/');
             var productServiceRootUrl = _configuration[$"OpenIddict:Resources:ProductService:RootUrl"]?.EnsureEndsWith('/');
-            var locationServiceRootUrl = _configuration[$"OpenIddict:Resources:LocationService:RootUrl"]?.EnsureEndsWith('/');
+            //var locationServiceRootUrl = _configuration[$"OpenIddict:Resources:LocationService:RootUrl"]?.EnsureEndsWith('/');
 
             await CreateApplicationAsync(
                 name: swaggerClientId!,
@@ -128,7 +128,7 @@ public class OpenIddictDataSeeder : ITransientDependency
                     $"{administrationServiceRootUrl}swagger/oauth2-redirect.html", // AdministrationService redirect uri
                     $"{saasServiceRootUrl}swagger/oauth2-redirect.html", // SaasService redirect uri
                     $"{productServiceRootUrl}swagger/oauth2-redirect.html", // ProductService redirect uri
-                                        $"{locationServiceRootUrl}swagger/oauth2-redirect.html" // LocationService redirect uri
+                                    //    $"{locationServiceRootUrl}swagger/oauth2-redirect.html" // LocationService redirect uri
 
                 }
             );

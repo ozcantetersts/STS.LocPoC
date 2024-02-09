@@ -33,7 +33,7 @@ public class LocPoCWebGatewayModule : AbpModule
                 authority: configuration["AuthServer:Authority"]!,
                 scopes: new[] {
                     /* Requested scopes for authorization code request and descriptions for swagger UI only */
-                    "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService"
+                    "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService","LocationService"
                 },
                 apiTitle: "Web Gateway API",
                 discoveryEndpoint: configuration["AuthServer:MetadataAddress"]
